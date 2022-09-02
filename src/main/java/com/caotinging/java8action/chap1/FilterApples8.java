@@ -18,7 +18,7 @@ public class FilterApples8 {
         System.out.println("绿苹果有：" + filterApples(apples, (Apple a) -> "green".equals(a.getColor())));
         System.out.println("重苹果有：" + filterApples(apples, (Apple a) -> a.getWeight() > 150));
 
-        System.out.println("重的绿苹果：" + apples.stream().filter(a -> a.getWeight() > 100).collect(Collectors.toList()));
+        System.out.println("重的绿苹果：" + apples.stream().filter(a -> a.getWeight() > 110).collect(Collectors.toList()));
     }
 
     public static List<Apple> filterApples(List<Apple> apples, Predicate<Apple> p) {
